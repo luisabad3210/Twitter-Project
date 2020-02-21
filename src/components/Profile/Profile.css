@@ -1,0 +1,34 @@
+.backgroundImg {
+    background-image: url('../Images/background.jpg');
+    width: 100%;
+    height: 250px;
+    background-position: top;
+}
+
+.profilePic {
+    border-radius: 50%;
+    border: 5px solid #172533;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+.profileInfo {
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.profileBio {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.userName {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bellowBio {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 20px;
+}
