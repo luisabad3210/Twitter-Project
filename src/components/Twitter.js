@@ -2,6 +2,7 @@ import React from 'react';
 import Body from '../components/Body';
 import fire from './Authentication/Config/Fire';
 import TrendingApi from '../components/APIs/TrendingApi';
+import Calendar from './Calendar/Calendar';
 
 
 
@@ -87,6 +88,7 @@ class Twitter extends React.Component {
 
             <div className='right'>
                 <div><input className='search-bar' placeholder='Search Twitter'></input></div>
+                <Calendar />
                 <TrendingApi />
             </div>
         </div>
