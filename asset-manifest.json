@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/twitter-project/static/css/main.b60cd9fd.chunk.css",
+    "main.js": "/twitter-project/static/js/main.2769b893.chunk.js",
+    "main.js.map": "/twitter-project/static/js/main.2769b893.chunk.js.map",
+    "runtime-main.js": "/twitter-project/static/js/runtime-main.3e366d55.js",
+    "runtime-main.js.map": "/twitter-project/static/js/runtime-main.3e366d55.js.map",
+    "static/js/2.667f6c46.chunk.js": "/twitter-project/static/js/2.667f6c46.chunk.js",
+    "static/js/2.667f6c46.chunk.js.map": "/twitter-project/static/js/2.667f6c46.chunk.js.map",
+    "index.html": "/twitter-project/index.html",
+    "precache-manifest.6f46a955ce274b67d920456a83ade93a.js": "/twitter-project/precache-manifest.6f46a955ce274b67d920456a83ade93a.js",
+    "service-worker.js": "/twitter-project/service-worker.js",
+    "static/css/main.b60cd9fd.chunk.css.map": "/twitter-project/static/css/main.b60cd9fd.chunk.css.map",
+    "static/js/2.667f6c46.chunk.js.LICENSE.txt": "/twitter-project/static/js/2.667f6c46.chunk.js.LICENSE.txt",
+    "static/media/Profile.css": "/twitter-project/static/media/background.effd1f36.jpg",
+    "static/media/bitcoin.png": "/twitter-project/static/media/bitcoin.298eb8eb.png",
+    "static/media/profile.jpg": "/twitter-project/static/media/profile.9491e2af.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3e366d55.js",
+    "static/js/2.667f6c46.chunk.js",
+    "static/css/main.b60cd9fd.chunk.css",
+    "static/js/main.2769b893.chunk.js"
+  ]
+}
