@@ -1,14 +1,15 @@
 .backgroundImg {
     background-image: url('../Images/background.jpg');
     width: 100%;
-    height: 250px;
-    background-position: top;
+    height: 350px;
+    background-size: cover;
+    /* background-position: center; */
 }
 
 .profilePic {
     border-radius: 50%;
     border: 5px solid #172533;
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: 10px;
 }
 
