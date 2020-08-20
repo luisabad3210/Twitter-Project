@@ -15,7 +15,6 @@ class TrendingApi extends React.Component {
             return response.json();
         })
         .then((myJson) => {
-            // console.log(myJson);
             this.setState({articles: myJson.articles});
         });
     }
@@ -28,7 +27,7 @@ class TrendingApi extends React.Component {
                 <hr></hr>
                 {this.state.articles.map((item, index) => {
                     return (
-                        <div className='trending'>
+                        <div key={index} className='trending'>
                         <h5>{item.title}</h5>
                         {/* <img alt='' src={item.urlToImage} width='120' height='120'/> */}
                         <div>{item.description}</div>

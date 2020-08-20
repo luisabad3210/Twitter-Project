@@ -30,7 +30,7 @@ class Profile extends React.Component {
 
                 {/* <img src={Background} width='100' height='100'/> */}
                 <div className='backgroundImg'>
-                <img className='profilePic'src={ProfilePic} width='150' height='150'/>
+                <img className='profilePic' alt="profile pic" src={ProfilePic} width='150' height='150'/>
                     
                 </div>
 

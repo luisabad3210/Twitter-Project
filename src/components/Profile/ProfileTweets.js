@@ -6,7 +6,7 @@ class ProfileTweets extends React.Component {
     render() {
         return (
             <div className='tweets'>
-                <div><img className='smallProfilePic'src={ProfilePic} width='40' height='40'/>{this.props.tweets.date}</div>
+                <div><img className='smallProfilePic' alt="profile pic" src={ProfilePic} width='40' height='40'/>{this.props.tweets.date}</div>
                 
                 <div className='tweetBody'>{this.props.tweets.body}</div>
                 {this.props.tweets.comments}

@@ -8,7 +8,7 @@ class ProfilePost extends React.Component {
     render() {
         return (
             <div>
-                <img className='smallProfilePic'src={ProfilePic} width='40' height='40'/>
+                <img className='smallProfilePic' alt="profile pic" src={ProfilePic} width='40' height='40'/>
                 <input
                 className='postInput'
                 type='text'
@@ -19,7 +19,6 @@ class ProfilePost extends React.Component {
                 }}
                 ></input>
                 <button
-                className='tweetBtn'
                 className='tweetBtn'
                 onClick={() => {
                     this.props.transferPost(this.state.tweet)

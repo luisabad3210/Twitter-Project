@@ -37,14 +37,6 @@ class Twitter extends React.Component {
             fire.auth().signOut()
         }
 
-        // changePage = () => {
-        //     if (this.state.isHomePage === true) {
-        //         this.setState({isHomePage: false})
-        //     } else {
-        //         this.setState({isHomePage: true})
-        //     }
-        // }
-
         changeToProfile = () => {
             this.setState({isHomePage: false})
         }
@@ -60,15 +52,15 @@ class Twitter extends React.Component {
                 <div className='nav-container'>
                     <h1>Twitter</h1>
                     <div className='buttonContainer'>
-                        <button className='navBtn'onClick={this.changeToHome}>Home</button>
-                        <button className='navBtn'>Explore</button>
-                        <button className='navBtn'>Notification</button>
-                        <button className='navBtn'>Messages</button>
-                        <button className='navBtn'>Bookmarks</button>
-                        <button className='navBtn'>List</button>
-                        <button className='navBtn' onClick={this.changeToProfile}>Profile</button>
-                        <button className='navBtn'>More</button>
-                        <button className='navBtn' onClick={this.logout}>Log out</button>
+                        <div><button className='navBtn'onClick={this.changeToHome}>Home</button></div>
+                        <div><button className='navBtn'>Explore</button></div>
+                        <div><button className='navBtn'>Notification</button></div>
+                        <div><button className='navBtn'>Messages</button></div>
+                        <div><button className='navBtn'>Bookmarks</button></div>
+                        <div><button className='navBtn'>List</button></div>
+                        <div><button className='navBtn' onClick={this.changeToProfile}>Profile</button></div>
+                        <div><button className='navBtn'>More</button></div>
+                        <button className='navBtn' onClick={this.logout}>LogOut</button>
                     </div>
                 </div>
             </div>

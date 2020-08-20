@@ -9,7 +9,7 @@ class HomePost extends React.Component {
     render() {
         return (
             <div className='posting'>
-                <img className='smallProfilePic'src={ProfilePic} width='40' height='40'/>
+                <img alt="profile pic" className='smallProfilePic'src={ProfilePic} width='40' height='40'/>
                 <input
                 className='postInput'
                 type='text'
