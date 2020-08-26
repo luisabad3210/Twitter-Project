@@ -26,10 +26,10 @@ class TweetsApi extends React.Component {
                 {this.state.tweets.map((item, index) => {
                     return (
                         <div key={index} className='tweets'>
-                            <img className='bitcoinImg' alt="bitcoin profile pic" src={BitcoinImg} width='50' height='50'/> Bitcoin {item.publishedAt}
+                            <img className='bitcoinImg' alt="bitcoin profile pic" src={BitcoinImg} width='50' height='50'/><i className="postName"> Bitcoin {item.publishedAt.slice(0,10)}</i>
                             <div className='title'>{item.title}</div>
                             {/* <div>{item.url}</div> */}
-                            <img className='TweetImg' alt='' src={item.urlToImage} width='400' height='400'/>
+                            <img className='TweetImg' alt='' src={item.urlToImage} />
                             <div className='tweetBody' >{item.description}</div>
                             <button className='Btn'>Comment</button>
                             <button className='Btn'>Retweet</button>

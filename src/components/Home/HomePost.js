@@ -28,7 +28,6 @@ class HomePost extends React.Component {
                     this.props.transferPost(this.state.tweet)
                 }}
                 >Tweet</button>
-                <hr></hr>
             </div>
         )
     }

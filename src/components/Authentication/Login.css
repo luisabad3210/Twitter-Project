@@ -1,6 +1,5 @@
 .login {
     background-color: #2888bf;
-    /* color: white; */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -8,7 +7,6 @@
 }
 
 .login-container {
-    /* border: 1px solid red; */
     background-color: white;
     width: 25%;
     height: 80%;
@@ -67,4 +65,76 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .login-container {
+        width: 65%;
+    }
+    .error {
+        font-size: 12px;
+    }
+    .button {
+        font-size: 12px;
+    }
+    .email, .password { 
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .login-container {
+        width: 60%;
+    }
+    .error {
+        font-size: 14px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .email, .password { 
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .login-container {
+        width: 45%;
+    }
+    .error {
+        font-size: 14px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .email, .password { 
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .login-container {
+        width: 40%;
+    }
+    .error {
+        font-size: 15px;
+    }
+    .button {
+        font-size: 15px;
+    }
+    .email, .password { 
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .login-container {
+        width: 35%;
+    }
+    .error {
+        font-size: 15px;
+    }
+    .button {
+        font-size: 15px;
+    }
+    .email, .password { 
+        font-size: 15px;
+    }
 }

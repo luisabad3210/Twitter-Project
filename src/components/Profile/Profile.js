@@ -1,5 +1,4 @@
 import React from 'react';
-import './Profile.css'
 import ProfilePic from '../Images/profile.jpg';
 // import Background from '../Images/background.jpg';
 import ProfilePost from './ProfilePost';
@@ -24,16 +23,13 @@ class Profile extends React.Component {
     render() {
         return (
             <div>
-                <div className='pageTitle' >{this.state.name}</div>
-
+                <h3 className='pageTitle' >Profile</h3>
                 <hr></hr>
-
                 {/* <img src={Background} width='100' height='100'/> */}
                 <div className='backgroundImg'>
-                <img className='profilePic' alt="profile pic" src={ProfilePic} width='150' height='150'/>
+                <img className='profilePic' alt="profile pic" src={ProfilePic}/>
                     
                 </div>
-
                 <div className='profileInfo'>
                     <div className='userName'>{this.state.name}</div>
                     <div>@{this.state.username}</div>
@@ -50,6 +46,7 @@ class Profile extends React.Component {
                 <hr></hr>
 
                 <ProfilePost transferPost={this.props.transferPost} />
+                <div className='space'></div>
                 <hr></hr>
                 {this.props.tweets.map((tweets, index) => {
                     return <ProfileTweets 

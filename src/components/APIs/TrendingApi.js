@@ -23,14 +23,14 @@ class TrendingApi extends React.Component {
         // console.log(this.state)
         return (
             <div className='trending-container'>
-                <div className='trends-for-you'><div>Trends for you</div> <div>Powered by Google News</div></div>
+                <div className='trends-for-you'><h2>Whats Happening</h2> <div>Powered by Google News</div></div>
                 <hr></hr>
                 {this.state.articles.map((item, index) => {
                     return (
                         <div key={index} className='trending'>
-                        <h5>{item.title}</h5>
+                        <h5 className="trendingTitle">{item.title}</h5>
                         {/* <img alt='' src={item.urlToImage} width='120' height='120'/> */}
-                        <div>{item.description}</div>
+                        <div className="trendingBody">{item.description}</div>
                         <form action={item.url}>
                             <button className='Btn' type="submit">Read More</button>
                         </form>

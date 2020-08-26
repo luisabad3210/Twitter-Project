@@ -1,87 +1,91 @@
 .twitter {
     display: grid;
     grid-template-columns: 25% 50% 25%;
-
-    background-color: #172533;
+    background-color: rgb(23, 32, 42);
     color: white;
 }
-
-.right {
-    border-left: 1px solid gray;
-    /* height: 100vh; */
-}
-
 hr {
-    border: 1px solid gray;
+    border: 1px solid rgb(40, 51, 64);
 }
-
-/* navigation bar */
-/* ------------------------ */
-
-.nav {
-    /* position: absolute; */
-    border-right: 1px solid gray;
-    /* height: 100vh; */
-    display: grid;
-    justify-content: center;
-    margin-left: 80px;
-    
+.space {
+    height: 23px;
 }
-
-.nav-container {
-    /* border: 1px solid red; */
-    width: 40%;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-.navBtn {
-    font-size: 20px;
-    /* font-style: italic; */
-    border: none;
-    background-color: #172533;
+.Btn {
+    border: 2px solid gray;
+    /* background-color: rgb(73, 161, 235); */
+    background-color: rgb(23, 32, 42);
+    border-radius: 15px;
     color: white;
-    /* padding: 10px; */
-    margin: 5px;
-    padding: 10px 30px 10px 0px;
 }
-
-.navBtn:focus {
-    outline: none;
-}
-
-.navBtn:hover {
-    /* background-color: #053c5c; */
-    /* border-radius: 30%; */
-    color: #2888bf;
+.Btn:hover {
+    background-color: rgb(28, 39, 51);
     cursor: pointer;
 }
 
 
+/* ____________________________ */
+/* navigation bar */
 
+.nav {
+    border-right: 3px solid rgb(40, 51, 64);
+    display: grid;
+    justify-content: center;
+    /* margin-left: 0px; */
+}
+h1 {
+    font-size: 40px;
+}
+.navBtn {
+    font-size: 20px;
+    border: none;
+    background-color: rgb(23, 32, 42);
+    color: white;
+    margin: 5px;
+    padding: 10px 30px 10px 0px;
+}
+.logoutBtn {
+    font-size: 20px;
+    border: none;
+    background-color: rgb(23, 32, 42);
+    color: rgb(73, 161, 235);
+    margin: 5px;
+    padding: 10px 30px 10px 0px;
+}
+.navBtn:focus, .logoutBtn:focus {
+    outline: none;
+}
+.navBtn:hover{
+    color: rgb(73, 161, 235);
+    cursor: pointer;
+}
+.logoutBtn:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* _________________________*/
 /* right section */
-/* --------------------------------- */
 
-
+.right {
+    border-left: 3px solid rgb(40, 51, 64);
+}
 .search-bar {
     width: 80%;
     height: 30px;
     font-size: 15px;
     border-radius: 30px;
-    background-color: #061b26;
+    background-color: rgb(40, 51, 64);
     color: white;
-    border: 1px solid gray;
-    margin: 10px 0px 10px 20px
+    border: 1px solid rgb(40, 51, 64);
+    margin: 5px 0px 10px 20px
 }
-
 .search-bar:focus {
     outline: none;
 }
-
 .trending-container {
-    border: 1px solid gray;
+    border: 1px solid rgb(40, 51, 64);;
+    background-color: rgb(28, 39, 51);
     overflow: scroll;
     font-size: 13px;
     width: 80%;
@@ -89,115 +93,652 @@ h1 {
     border-radius: 15px;
     margin-left: 20px;
 }
-
 .trending:hover {
-    background-color: #0b2d40;
+    background-color: rgb(23, 32, 42);
 }
-
-.Btn {
-    border: 2px solid gray;
-    background-color: #061b26;
-    border-radius: 15px;
-    color: white;
-}
-
-.Btn:hover {
-    background-color: #0b2d40;
-}
-
 .trends-for-you {
     margin: 5px 0px 0px 10px;
 }
-
 .tweets:hover {
-    background-color: #0b2d40;
+    background-color: rgb(28, 39, 51);
 }
 
 
-
-/* --------------------- */
-
-
+/* _____________________*/
+/* Posting */
 
 .postInput {
     width: 70%;
     font-size: 20px;
-    background-color: #172533;
+    background-color: rgb(23, 32, 42);
     border: none;
     padding: 0px 0px 40px 10px;
     color: white;
 }
-
 .postInput:focus {
     outline: none;
 }
-
 .smallProfilePic {
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 15px;
 }
-
 .tweetBtn {
     font-size: 20px;
-    background-color: #2888bf;
+    background-color: rgb(73, 161, 235);
     border: none;
     color: white;
     border-radius: 20px;
     padding: 7px;
-    /* display: grid;
-    align-content: flex-end;
-    vertical-align: middle;  */
     float: right;
-    /* line-height: 5px; */
     margin-right: 10px;
     margin-top: 30px;
-    /* margin-bottom: 30px; */
 }
-
 .tweetBtn:focus {
     outline: none;
 }
-
 .tweetBtn:hover {
     cursor: pointer;
 }
-
 .pageTitle {
     margin: 15px 0px 15px 10px;
 }
-
 .tweetBody {
     margin: 15px 0px 10px 55px;
 }
 
 
+/* ____________________________ */
+/* Home */
+
+.TweetImg {
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+    margin: 15px 20px 10px 65px;
+}
+.title {
+    margin: 15px 20px 10px 65px;
+}
+.tweetBody {
+    margin: 15px 20px 10px 65px;
+}
+.bitcoinImg {
+    margin-left: 10px;
+}
+
+
+/* ____________________________ */
+/* Profile */
+
+.backgroundImg {
+    background-image: url('./components/Images/background.jpg');
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+.profilePic {
+    border-radius: 50%;
+    border: 5px solid rgb(23, 32, 42);;
+    margin-top: 250px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+}
+.profileInfo {
+    margin-top: 60px;
+    margin-left: 10px;
+}
+.profileBio {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.userName {
+    font-size: 18px;
+    font-weight: bold;
+}
+.bellowBio {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+
+/* ____________________________ */
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .postInput {
+        width: 80%;
+        font-size: 10px;
+    }
+    .search-bar {
+        margin-left: 0px;
+        width: 90%;
+        height: 15px;
+    }
+    .trending-container {
+        margin-left: 0px;
+        width: 90%;
+    }
+    h1 {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .navBtn {
+        font-size: 10px;
+        margin-left: 5px;
+        padding-right: 0px;
+    }
+    .tweetBody {
+        font-size: 10px;
+        margin: 15px 0px 5px 5px !important;
+    }
+    .tweetBtn {
+        margin-top: 0px;
+        font-size: 10px;
+    }
+    .logoutBtn {
+        padding-right: 0px;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .postName {
+        font-size: 8px;
+    }
+    .smallProfilePic {
+        margin: 0px;
+    }
+    .pageTitle {
+        font-size: 10px;
+    }
+    .trends-for-you {
+        font-size: 7px;
+    }
+    .bitcoinImg {
+        margin-left: 0px !important;
+    }
+    .TweetImg {
+        margin-left: 25px !important;
+    }
+    .title {
+        margin-left: 10px !important;
+        font-size: 13px;
+    }
+    .trendingTitle {
+        font-size: 8px;
+    }
+    .trendingBody {
+        font-size: 5px;
+    }
+    .Btn {
+        font-size: 9px;
+    }
+
+
+    .userName {
+        font-size: 10px;
+    }
+    .profileBio {
+        font-size: 10px;
+    }
+    .profileInfo {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .bellowBio {
+        font-size: 10px;
+    }
+    .profilePic{
+        width: 60px;
+        height: 60px;
+        border: 2px solid rgb(23, 32, 42);
+        margin-top: 165px;
+    }
+    .backgroundImg {
+        height: 200px;
+    }
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 500px) {
+    .postInput {
+        width: 40%;
+        font-size: 10px;
+    }
+    .search-bar {
+        margin-left: 0px;
+        width: 93%;
+        height: 18px;
+    }
+    .trending-container {
+        margin-left: 0px;
+        width: 96%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .navBtn {
+        font-size: 15px;
+    }
+    .tweetBody {
+        font-size: 12px;
+        margin: 15px 5px 5px 5px !important;
+    }
+    .tweetBtn {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+    .postName {
+        font-size: 10px;
+    }
+    .smallProfilePic {
+        margin-right: 5px;
+    }
+    .pageTitle {
+        font-size: 13px;
+    }    
+    .trends-for-you {
+        font-size: 8px;
+    }
+    .bitcoinImg {
+        margin-left: 0px !important;
+    }
+    .TweetImg {
+        margin-left: 25px !important;
+    }
+    .title {
+        margin-left: 10px !important;
+        font-size: 13px;
+    }
+    .trendingTitle {
+        font-size: 9px;
+    }
+    .trendingBody {
+        font-size: 6px;
+    }
+    .Btn {
+        font-size: 10px;
+    }
+
+    .userName {
+        font-size: 10px;
+    }
+    .profileBio {
+        font-size: 10px;
+    }
+    .profileInfo {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .bellowBio {
+        font-size: 10px;
+    }
+    .profilePic{
+        width: 75px;
+        height: 75px;
+        border: 3px solid rgb(23, 32, 42);
+        margin-top: 150px;
+    }
+    .backgroundImg {
+        height: 200px;
+    }
+}
 
 
 
+@media screen and (min-width: 501px) and (max-width: 550px) {
+    .postInput {
+        width: 40%;
+        font-size: 10px;
+    }
+    .search-bar {
+        margin-left: 10px;
+    }
+    .trending-container {
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .navBtn {
+        font-size: 15px;
+    }
+    .tweetBody {
+        font-size: 12px;
+        margin: 15px 5px 5px 5px !important;
+    }
+    .tweetBtn {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+    .postName {
+        font-size: 13px;
+    }
+    .pageTitle {
+        font-size: 15px;
+    }
+    .trends-for-you {
+        font-size: 8px;
+    }
+    .bitcoinImg {
+        margin-left: 0px !important;
+    }
+    .TweetImg {
+        margin-left: 25px !important;
+    }
+    .title {
+        margin-left: 10px !important;
+        font-size: 13px;
+    }
+    .trendingTitle {
+        font-size: 10px;
+    }
+    .trendingBody {
+        font-size: 7px;
+    }
+    .Btn {
+        font-size: 10px;
+    }
 
-@media screen and (min-width: 300px) and (max-width: 350px) {}
+    .userName {
+        font-size: 10px;
+    }
+    .profileBio {
+        font-size: 10px;
+    }
+    .profileInfo {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .bellowBio {
+        font-size: 10px;
+    }
+    .profilePic{
+        width: 80px;
+        height: 80px;
+        border: 4px solid rgb(23, 32, 42);
+        margin-top: 165px;
+    }
+    .backgroundImg {
+        height: 220px;
+    }
+}
 
-@media screen and (min-width: 350px) and (max-width: 400px) {}
+@media screen and (min-width: 550px) and (max-width: 600px) {
+    .postInput {
+        width: 40%;
+        font-size: 10px;
+    }
+    .search-bar {
+        margin-left: 10px;
+    }
+    .trending-container {
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .navBtn {
+        font-size: 15px;
+    }
+    .tweetBody {
+        font-size: 12px;
+    }
+    .tweetBtn {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+    .bitcoinImg {
+        margin-left: 0px !important;
+    }
+    .TweetImg {
+        margin-left: 25px !important;
+    }
+    .title {
+        margin-left: 10px !important;
+        font-size: 13px;
+    }
+    .trendingTitle {
+        font-size: 11px;
+    }
+    .trendingBody {
+        font-size: 8px;
+    }
+    .Btn {
+        font-size: 10px;
+    }
 
-@media screen and (min-width: 400px) and (max-width: 450px) {}
+    .userName {
+        font-size: 10px;
+    }
+    .profileBio {
+        font-size: 10px;
+    }
+    .profileInfo {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .bellowBio {
+        font-size: 10px;
+    }
+    .profilePic{
+        width: 80px;
+        height: 80px;
+        border: 4px solid rgb(23, 32, 42);
+        margin-top: 165px;
+    }
+    .backgroundImg {
+        height: 220px;
+    }
+}
 
-@media screen and (min-width: 450px) and (max-width: 500px) {}
+@media screen and (min-width: 600px) and (max-width: 650px) {
+    .postInput {
+        width: 50%;
+        font-size: 15px;
+    }
+    .search-bar {
+        margin-left: 10px;
+    }
+    .trending-container {
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .tweetBtn {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+    .bitcoinImg {
+        margin-left: 5px !important;
+    }
+    .TweetImg {
+        margin-left: 60px !important;
+    }
+    .title {
+        margin-left: 60px !important;
+        font-size: 13px;
+    }
 
-@media screen and (min-width: 500px) and (max-width: 550px) {}
 
-@media screen and (min-width: 550px) and (max-width: 650px) {}
+    .userName {
+        font-size: 10px;
+    }
+    .profileBio {
+        font-size: 10px;
+    }
+    .profileInfo {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .bellowBio {
+        font-size: 10px;
+    }
+    .profilePic{
+        width: 85px;
+        height: 85px;
+        border: 4.5px solid rgb(23, 32, 42);
+        margin-top: 160px;
+    }
+    .backgroundImg {
+        height: 220px;
+    }
+}
 
-@media screen and (min-width: 650px) and (max-width: 750px) {}
+@media screen and (min-width: 650px) and (max-width: 700px) {
+    .postInput {
+        width: 50%;
+        font-size: 15px;
+    }
+    .search-bar {
+        margin-left: 10px;
+    }
+    .trending-container {
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .userName {
+        font-size: 10px;
+    }
+    .profileBio {
+        font-size: 10px;
+    }
+    .profileInfo {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .bellowBio {
+        font-size: 10px;
+    }
+    .profilePic{
+        width: 85px;
+        height: 85px;
+        border: 5px solid rgb(23, 32, 42);
+        margin-top: 160px;
+    }
+    .backgroundImg {
+        height: 240px;
+    }
+}
 
-@media screen and (min-width: 750px) and (max-width: 800px) {}
+@media screen and (min-width: 700px) and (max-width: 750px) {
+    .postInput {
+        width: 50%;
+        font-size: 15px;
+    }
+    .search-bar {
+        margin-left: 15px;
+    }
+    .trending-container {
+        margin-left: 15px;
+    }
 
-@media screen and (min-width: 800px) and (max-width: 850px) {}
 
-@media screen and (min-width: 850px) and (max-width: 950px) {}
+    .userName {
+        font-size: 10px;
+    }
+    .profileBio {
+        font-size: 10px;
+    }
+    .profileInfo {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .bellowBio {
+        font-size: 10px;
+    }
+    .profilePic{
+        width: 85px;
+        height: 85px;
+        border: 5px solid rgb(23, 32, 42);
+        margin-top: 160px;
+    }
+    .backgroundImg {
+        height: 240px;
+    }
 
-@media screen and (min-width: 950px) and (max-width: 1100px) {}
+}
 
-@media screen and (min-width: 1100px) and (max-width: 1200px) {}
+@media screen and (min-width: 750px) and (max-width: 800px) {
+    .postInput {
+        width: 55%;
+    }
 
-@media screen and (min-width: 1200px) and (max-width: 1300px){}
+
+    .userName {
+        font-size: 10px;
+    }
+    .profileBio {
+        font-size: 10px;
+    }
+    .profileInfo {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .bellowBio {
+        font-size: 10px;
+    }
+    .profilePic{
+        width: 100px;
+        height: 100px;
+        border: 5px solid rgb(23, 32, 42);
+        margin-top: 185px;
+    }
+    .backgroundImg {
+        height: 260px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 850px) {
+    .postInput {
+        width: 55%;
+    }
+
+    .userName {
+        font-size: 10px;
+    }
+    .profileBio {
+        font-size: 10px;
+    }
+    .profileInfo {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .bellowBio {
+        font-size: 10px;
+    }
+    .profilePic{
+        width: 115px;
+        height: 115px;
+        border: 5px solid rgb(23, 32, 42);
+        margin-top: 200px;
+    }
+    .backgroundImg {
+        height: 280px;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 950px) {
+    .postInput {
+        width: 60%;
+    }
+    .profilePic{
+        width: 120px;
+        height: 120px;
+        border: 5px solid rgb(23, 32, 42);
+        margin-top: 220px;
+    }
+    .backgroundImg {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+    .postInput {
+        width: 60%;
+    }
+}

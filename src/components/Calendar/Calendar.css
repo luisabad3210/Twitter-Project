@@ -8,7 +8,7 @@ tr {
 }
 
 .calendar-container {
-    border: 1px solid gray;
+    border: 1px solid rgb(40, 51, 64);;
     width: 80%;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -16,11 +16,13 @@ tr {
 }
 
 .calendar {
-    background-color: #172533;
+    /* background-color: rgb(23, 32, 42); */
+    background-color: rgb(28, 39, 51);
     border-spacing: 0;
     border-collapse: collapse;
-    width: 80%;
-    margin-left: 30px;
+    width: 100%;
+    margin: 0px;
+    border-radius: 15px;
 }
 
 .calendar-header {
@@ -55,7 +57,7 @@ tr {
 }
 
 .day:hover {
-    background-color: #0b2d40;
+    background-color: rgb(23, 32, 42);
     /* color: white; */
     cursor: pointer;
     /* border-radius: 50%; */
@@ -63,7 +65,7 @@ tr {
 }
 
 .current-day {
-    background-color: #2888bf;
+    background-color: rgb(73, 161, 235);
     width: 28px;
     height: 28px;
     line-height: 28px;
@@ -111,4 +113,192 @@ tr {
 
 a {
     color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    .calendar {
+        margin: 0px;
+    }
+    .week-day {
+        font-size: 3px;
+    }
+    .calendar-container {
+        margin-left: 0px;
+        width: 90%;
+
+    }
+    .calendar-header {
+        font-size: 10px;
+        border-bottom: none;
+    }
+    .day {
+        font-size: 3px;
+    }
+    
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+    .calendar {
+        margin: 0px;
+    }
+    .week-day {
+        font-size: 6px;
+    }
+    .calendar-container {
+        margin-left: 0px;
+        width: 96%;
+
+    }
+    .calendar-header {
+        font-size: 15px;
+    }
+    .day {
+        font-size: 6px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 500px) {
+    .calendar {
+        margin: 0px;
+    }
+    .week-day {
+        font-size: 6px;
+    }
+    .calendar-container {
+        margin-left: 0px;
+        width: 96%;
+    }
+    .calendar-header {
+        font-size: 15px;
+    }
+    .day {
+        font-size: 6px;
+    }
+
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 550px) {
+    .calendar {
+        margin: 0px;
+    }
+    .week-day {
+        font-size: 6px;
+    }
+    .calendar-container {
+        margin-left: 8px;
+    }
+    .calendar-header {
+        font-size: 1.1em;
+    }
+    .day {
+        font-size: 7px;
+    }
+
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 600px) {
+    .calendar {
+        margin: 0px;
+    }
+    .week-day {
+        font-size: 7px;
+    }
+    .calendar-container {
+        margin-left: 8px;
+    }
+    .calendar-header {
+        font-size: 1.1em;
+    }
+    .day {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+    .calendar {
+        margin: 0px;
+    }
+    .week-day {
+        font-size: 7px;
+    }
+    .calendar-container {
+        margin-left: 8px;
+    }
+    .calendar-header {
+        font-size: 1.1em;
+    }
+    .day {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+    .calendar {
+        margin: 0px;
+    }
+    .week-day {
+        font-size: 8px;
+    }
+    .calendar-container {
+        margin-left: 8px;
+    }
+    .calendar-header {
+        font-size: 1.1em;
+    }
+    .day {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 750px) {
+    .calendar {
+        margin: 0px;
+    }
+    .week-day {
+        font-size: 0.1em;
+    }
+    .calendar-container {
+        margin-left: 15px;
+    }
+    .calendar-header {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 800px) {
+    .calendar {
+        margin-left: 0px;
+    }
+    .week-day {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 850px) {
+    .calendar {
+        margin-left: 0px;
+    }
+    .week-day {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 950px) {
+    .calendar {
+        margin-left: 0px;
+    }
+    .week-day {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+    .calendar {
+        margin: 0px;
+    }
 }

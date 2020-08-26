@@ -60,7 +60,7 @@ class Twitter extends React.Component {
                         <div><button className='navBtn'>List</button></div>
                         <div><button className='navBtn' onClick={this.changeToProfile}>Profile</button></div>
                         <div><button className='navBtn'>More</button></div>
-                        <button className='navBtn' onClick={this.logout}>LogOut</button>
+                        <button className='logoutBtn' onClick={this.logout}>LogOut</button>
                     </div>
                 </div>
             </div>
